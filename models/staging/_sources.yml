@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: customer-churn-514612                            
+    schema: analytics                                                             
+    tables:
+      - name: telco_customer_churn
