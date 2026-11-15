@@ -1,15 +1,25 @@
-Welcome to your new dbt project!
+# End-to-End Customer Churn Prediction 
 
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
+[![dbt](https://img.shields.io/badge/dbt-1.7+-orange)](https://www.getdbt.com/)
+[![BigQuery](https://img.shields.io/badge/BigQuery-Sandbox-blue)](https://cloud.google.com/bigquery)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+## Business Problem
+
+This project builds an end-to-end customer churn prediction pipeline that:
+- cleans and transforms raw Telco customer data using **dbt**,
+- trains a **logistic regression model** in **BigQuery ML** to predict churn probability, 
+- exposes results via a **Looker Studio dashboard** and static charts for business stakeholders.
+
+The entire workflow runs on the **BigQuery Sandbox** and **dbt Core** locally.
+
+## Dataset
+
+- **Telco Customer Churn** (public, ~7,000 rows, 21 columns)
+- Source: [Kaggle - Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+- Label: `Churn` (Yes/No)
+- Features: demographics, account information, services subscribed, contract type, monthly charges, tenure.
+
+
+## dbt Project Structure
