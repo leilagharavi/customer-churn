@@ -1,3 +1,9 @@
+{{
+    config(
+        materialized='ephemeral',
+        description='Intermediate feature engineering model for customer churn analysis and BQML.'
+    )
+}}
 SELECT
     customer_id,
     gender,
