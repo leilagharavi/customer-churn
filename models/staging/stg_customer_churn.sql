@@ -1,3 +1,9 @@
+{{
+    config(
+        materialized='view',
+        description='Staging model for raw Telco customer churn data. Standardizes column names, handles types, and cleans raw strings.'
+    )
+}}
 SELECT
     CustomerID AS customer_id,
     Gender AS gender,
