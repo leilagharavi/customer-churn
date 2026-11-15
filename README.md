@@ -4,7 +4,6 @@
 [![BigQuery](https://img.shields.io/badge/BigQuery-Sandbox-blue)](https://cloud.google.com/bigquery)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-
 ## Business Problem
 
 This project builds an end-to-end customer churn prediction pipeline that:
@@ -20,6 +19,5 @@ The entire workflow runs on the **BigQuery Sandbox** and **dbt Core** locally.
 - Source: [Kaggle - Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 - Label: `Churn` (Yes/No)
 - Features: demographics, account information, services subscribed, contract type, monthly charges, tenure.
-
 
 ## dbt Project Structure
