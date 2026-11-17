@@ -66,7 +66,7 @@ The project uses a domain-driven, modular architecture designed for scalability,
 │   └── model_evaluation_metrics.sql    # Query to report the ML model evaluation metrics
 ├── models/
 │   ├── staging/
-│   │   ├── _sources_.yml               # Source definitions & data tests
+│   │   ├── _sources.yml               # Source definitions & data tests
 │   │   └── stg_customer_churn.sql      # Cleaning & standardizing raw columns
 │   ├── intermediate/
 │   │   └── int_customer_features.sql   # Feature engineering layer
