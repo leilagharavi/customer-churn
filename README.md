@@ -62,9 +62,11 @@ The project uses a domain-driven, modular architecture designed for scalability,
 ├── analyses/
 │   ├── churn_by_contract.sql           # Ad-hoc SQL exploration on contract risks
 │   └── train_churn_model.sql           # BigQuery ML model creation & evaluation script
+│   └── view_learned_weights.sql        # Query to view the learned weights of the ML model
+│   └── model_evaluation_metrics.sql    # Query to report the ML model evaluation metrics
 ├── models/
 │   ├── staging/
-│   │   ├── schema.yml                  # Source definitions & data tests
+│   │   ├── _sources_.yml               # Source definitions & data tests
 │   │   └── stg_customer_churn.sql      # Cleaning & standardizing raw columns
 │   ├── intermediate/
 │   │   └── int_customer_features.sql   # Feature engineering layer
