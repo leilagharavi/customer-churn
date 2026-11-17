@@ -6,7 +6,7 @@
 -- Features: Demographics, tenure, services, contract type, charges, and CLTV
 -- =========================================================================
 
-CREATE OR REPLACE MODEL `customer-churn-514612.analytics.customer_churn_model`
+CREATE OR REPLACE MODEL `customer-churn-514612.ml.customer_churn_model`
 OPTIONS(
     model_type = 'logistic_reg',
     input_label_cols = ['churn_label'],
